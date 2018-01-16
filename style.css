@@ -1,0 +1,311 @@
+
+body {
+    background-color: rgb(206, 193, 169);
+}
+
+
+.color-square, #interface-box, #step-display, #on-off-wrapper, #strict-light, #btn-start, 
+#btn-strict-mode {
+    border-style: solid;
+    border-color: rgb(46, 46, 46);
+}
+
+#game-box {
+    position: relative;
+    display: inline-block;
+    height: 500px;
+    min-width: 500px;
+    left: 38%;
+    margin-top: 10%;
+}
+
+#interface-box {
+    position: absolute;
+    border-style: solid;
+    border-width: 20px;
+    background-color: white;
+    z-index: 1;
+    left: 21%;
+    bottom: 21%;
+    border-radius: 100%;
+    min-width: 250px;
+    min-height: 250px;
+}
+
+#interface-box p {
+    text-align: center;
+    font-family: Georgia;
+    font-size: 50px;
+}
+
+.interface-text {
+    position: absolute;
+    top: 70%;
+}
+
+#step-text {
+    left: 15%;
+}
+
+#start-text {
+    left: 41%;
+}
+
+#strict-text {
+    left: 65%;
+}
+
+#step-display {
+    position: absolute;
+    border-style: solid;
+    color: rgb(102, 8, 8);
+    text-align: center;
+    left: 15%;
+    top: 52.5%;
+    font-size: 25px;
+    width: 20%;
+    height: 12.5%;
+    border-radius: 10%;
+    background-color: rgb(75, 6, 6);
+}
+
+#strict-light {
+    position: absolute;
+    top: 45%;
+    left: 72%;
+    width: 10px;
+    height: 10px;
+    background-color: black;
+    border-radius: 100%;
+    border-style: solid;
+    border-width: 5px;
+}
+
+#btn-start, #btn-strict-mode {
+    position: absolute;
+    top: 55%;
+    width: 30px;
+    height: 30px;
+    border-radius: 100%;
+    
+}
+
+#btn-start {
+    background-color: rgb(219, 1, 1);
+    left: 45%;
+}
+
+#btn-strict-mode {
+    background-color: rgb(255, 196, 0);
+    left: 70%;
+}
+
+#power-wrapper {
+    position: absolute;
+    left: 20%;
+    top: 80%;
+    width: 150px;
+}
+
+#text-off {
+    float: left;
+}
+
+#text-on {
+    float: right;
+}
+
+#on-off-wrapper {
+    position: relative;
+    border-style: solid;
+    left: 32.5%;
+    bottom: 500%;
+    height: 25px;
+    width: 50px;
+}
+
+.on-off-blocks {
+    position: absolute;
+    background-color: rgb(0, 136, 255);
+    height: 25px;
+    width: 25px;
+}
+
+#on-block {
+    left: 25px;
+}
+
+
+.interactable:hover {
+    cursor: pointer;
+}
+
+.color-square {
+    position: absolute;
+    border-style: solid;
+    height: 250px;
+    min-width: 250px;
+}
+
+#green, #red {
+    bottom: 50%;
+}
+
+#yellow, #blue {
+    top: 50%;
+}
+
+#blue, #red {
+    left: 50%;
+}
+
+#green, #yellow {
+    right: 50%;
+}
+
+#green {
+    background: green;
+    border-top-left-radius: 100%;
+    border-width: 35px 15px 15px 35px;
+}
+
+#red {
+    background: red;
+    border-top-right-radius: 100%;
+    border-width: 35px 35px 15px 15px;
+}
+
+#yellow {
+    background: yellow;
+    border-bottom-left-radius: 100%;
+    border-width: 15px 15px 35px 35px;
+}
+
+#blue {
+    background: blue;
+    border-bottom-right-radius: 100%;
+    border-width: 15px 35px 35px 15px;
+}
+
+
+@media only screen and (max-width: 768px) {
+
+    @media (orientation: portrait) {
+        #game-box {
+            left: 14%;
+        }
+    }
+
+    @media (orientation: landscape) {
+        #game-box {
+            left: 30%;
+        }
+    }
+    #game-box {
+        height: 250px;
+        min-width: 250px;
+    }
+
+    #interface-box {
+        min-width: 125px;
+        min-height: 125px;
+        left: 21%;
+        bottom: 21%;
+        border-width: 10px;
+    }
+
+    #interface-box p {
+        text-align: center;
+        font-family: Georgia;
+        font-size: 25px;
+    }
+
+    .interface-text, #text-off, #text-on {
+        font-size: 7px;
+    }
+
+    #step-text {
+        left: 15%;
+    }
+    
+    #start-text {
+        left: 43%;
+    }
+    
+    #strict-text {
+        left: 67%;
+    }
+
+    #step-display {
+        left: 12.5%;
+        font-size: 12px;
+        width: 20%;
+        height: 12.5%;
+    }
+    
+    #strict-light {
+        width: 5px;
+        height: 5px;
+        border-width: 2.5px;
+    }
+    
+    #btn-start, #btn-strict-mode {
+        top: 55%;
+        width: 15px;
+        height: 15px;        
+    }
+
+    #power-wrapper {
+        width: 75px;
+    }
+
+    #text-off, #text-on {
+        margin-top: 5%;
+    }
+
+    
+    #text-off {
+        float: left;
+    }
+    
+    #text-on {
+        float: right;
+    }
+    
+    #on-off-wrapper {
+        height: 12.5px;
+        width: 25px;
+    }
+    
+    .on-off-blocks {
+        height: 12.5px;
+        width: 12.5px;
+    }
+    
+    #on-block {
+        left: 12.5px;
+    }
+
+    .color-square {
+        height: 125px;
+        min-width: 125px;
+    }
+
+    #green {
+        background: green;
+        border-top-left-radius: 100%;
+        border-width: 17.5px 7.5px 7.5px 17.5px;
+    }
+    
+    #red {
+        border-width: 17.5px 17.5px 7.5px 7.5px;
+    }
+    
+    #yellow {
+        border-width: 7.5px 7.5px 17.5px 17.5px;
+    }
+    
+    #blue {
+        border-width: 7.5px 17.5px 17.5px 7.5px;
+    }
+}

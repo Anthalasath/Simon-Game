@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<!-- TODO: Use CDN instead of local libraries in final version
+Maybe also make use of fallback.js: http://fallback.io/ -->
+<html>
+    <head>
+        <meta charset="UTF-8"> 
+        <title>
+            Simon Game
+        </title>
+        <link rel="stylesheet" href="Libraries\jQueryUI\jquery-ui.min.css">
+        <link href="style.css" type="text/css" rel="stylesheet">
+        <script src="Libraries\jQuery\jquery-3.2.1.js"></script>
+        <script src="Libraries\jQueryUI\external/jquery/jquery.js"></script>
+        <script src="Libraries\jQueryUI\jquery-ui.min.js"></script>
+        <script src="script.js"></script>
+    </head>
+    <body>   
+        <div id="game-box">
+            <div class="color-square interactable" id="green"></div>
+            <div class="color-square interactable" id="red"></div>
+            
+            <div id="interface-box">
+                <p>Simon</p>
+                <div id="step-display">--</div>
+                <div id="strict-light"></div>
+                <input type="button" class="interactable" id="btn-start"></input>
+                <input type="button" class="interactable" id="btn-strict-mode"></input>
+
+                <div class="interface-text" id="step-text">COUNT</div>
+                <div class="interface-text" id="start-text">START</div>
+                <div class="interface-text" id="strict-text">STRICT</div>
+
+                <div id="power-wrapper">
+                    <div id="text-off">OFF</div>
+                    <div id="text-on">ON</div>
+                    <div class="interactable" id="on-off-wrapper">
+                        <div class="on-off-blocks" id="off-block"></div>
+                        <div class="on-off-blocks" id="on-block"></div>
+                    </div>
+                </div>
+            </div> 
+
+            <div class="color-square interactable" id="yellow"></div>
+            <div class="color-square interactable" id="blue"></div>
+        </div>
+        
+        
+    </body>
+</html>
